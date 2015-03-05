@@ -6,7 +6,7 @@ class HelloServletSpec extends MutableScalatraSpec {
   "GET / on HelloServlet" should {
     "return a greeting" in {
       get("/") {
-        body must equalTo("""{"greeting":"Hello","to":"World"}""")
+        body must equalTo("""{"greeting":"Hello","to":"World!!"}""")
       }
     }
   }
